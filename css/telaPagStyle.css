@@ -1,0 +1,87 @@
+/* styles.css - estilo simples e moderno para a tela de pagamento */
+
+/* reset básico */
+* { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color:#111; background:#f6f8fa; }
+
+/* container centralizado */
+.container {
+  max-width:760px;
+  margin:32px auto;
+  background:white;
+  padding:24px;
+  border-radius:12px;
+  box-shadow: 0 6px 22px rgba(16,24,40,0.08);
+}
+
+/* títulos */
+h1 { font-size:1.5rem; margin:0 0 12px; }
+h2 { font-size:1rem; margin:0 0 8px; color:#333; }
+
+/* resumo do pedido */
+.summary { border-left:4px solid #f4e805; padding:12px 16px; margin-bottom:18px; background:#faf7ff; border-radius:8px; }
+.summary .amount { margin-top:8px; font-size:1.1rem; }
+
+/* formulário */
+form { display:block; }
+fieldset { border: none; margin:0 0 16px; padding:0; }
+label { display:block; margin:12px 0 6px; font-weight:600; font-size:0.9rem; }
+input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #d7dbe0;
+  font-size:0.95rem;
+  outline:none;
+}
+input:focus { border-color:#ddff00; box-shadow:0 0 0 4px rgba(107,70,193,0.06); }
+
+/* linha com colunas */
+.row { display:flex; gap:12px; }
+.col { flex:1; }
+
+/* botão */
+button[type="submit"] {
+  margin-top:14px;
+  width:100%;
+  padding:12px;
+  border-radius:10px;
+  border:0;
+  background:#f1e905;
+  color:black;
+  font-weight:700;
+  font-size:1rem;
+  cursor:pointer;
+  box-shadow: 0 6px 18px rgb(83, 84, 46);
+}
+button[type="submit"]:disabled { opacity:0.6; cursor:not-allowed; }
+
+/* mensagens de erro */
+.error { color:#b00020; font-size:0.85rem; min-height:1.1em; margin-top:6px; }
+
+/* status message */
+#status-message { margin-top:12px; font-weight:600; }
+
+/* preview do cartão (visual simples) */
+.card-preview {
+  background: linear-gradient(135deg,#fbff00,#f8bc24d3);
+  color:black;
+  padding:14px;
+  border-radius:10px;
+  margin-bottom:12px;
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+.card-preview .card-number { font-size:1.1rem; letter-spacing:2px; }
+.card-preview .card-name { font-size:0.85rem; text-transform:uppercase; opacity:0.95; }
+.card-preview .card-expiry { font-size:0.85rem; opacity:0.9; }
+
+/* nota do rodapé */
+.note { margin-top:18px; color:#5a5f66; font-size:0.85rem; }
+
+/* responsividade */
+@media (max-width:520px){
+  .row { flex-direction:column; }
+  .container { margin:16px; padding:18px; }
+}
