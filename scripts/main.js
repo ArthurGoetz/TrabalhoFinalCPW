@@ -1,4 +1,4 @@
-/* Trocar tema da página (claro ou escuro) */
+//#region [Tema da página]
 const light = document.getElementById("light");
 const dark = document.getElementById("dark");
 const temalink = document.getElementById("tema");
@@ -16,8 +16,9 @@ function setTheme(Theme) {
 light.addEventListener("click", () => setTheme("light"));
 dark.addEventListener("click", () => setTheme("dark"));
 
-/*// Ao carregar a página, verifica se há um tema salvo
+// Ao carregar a página, verifica se há um tema salvo
 const savedTheme = localStorage.getItem("tema");
 if (savedTheme) {
   setTheme(savedTheme);
-}*/
+}
+//#endregion
