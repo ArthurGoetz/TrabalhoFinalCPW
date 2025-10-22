@@ -1,21 +1,46 @@
+/* Estilo geral */
 body {
-    margin: 10% auto;
-    background: #444444; 
-    color: #f2f2f2; 
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.8; 
-    text-shadow: 0 1px 0 #444444; 
-    max-width: 600px;
-}
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #444444;
+} 
+
 code {
-    background: 444444;
+    background: rgb(40, 38, 38);
 }
 a {
-    border-bottom: 1px solid #f2f2f2; 
-    color: #f2f2f2; 
+    border-bottom: 1px solid #444444; 
+    color: #444444; 
     text-decoration: none;
 }
 a:hover {
     border-bottom: 0;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+}
+
+/* Navegação (links) */
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Efeito hover */
+nav a:hover {
+  color: #e4e800;
+}
+
+p{
+    color:white;
 }

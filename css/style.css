@@ -2,6 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: white;
 } 
 
 code {
@@ -16,24 +17,26 @@ a:hover {
     border-bottom: 0;
 }
 
-/* Lista de navegação */
-nav ul {
-  list-style: none;
+/* Cabeçalho */
+header {
+  background-color: #000000;
+  color: white;
   display: flex;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
 }
 
-/* Links */
+/* Navegação (links) */
 nav a {
-   color: #444444;
+  color: white;
   text-decoration: none;
+  margin-left: 20px;
   font-weight: bold;
   transition: 0.3s;
 }
 
 /* Efeito hover */
 nav a:hover {
-  color: #ebe705f7;
+  color: #e4e800;
 }
