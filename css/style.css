@@ -1,13 +1,9 @@
+/* Estilo geral */
 body {
-    margin: 5% auto;
-    background: #f2f2f2; 
-    color: #444444; 
-    font-family: sans-serif;
-    font-size: 16px;
-    line-height: 1.8; 
-    text-shadow: 0 1px 0 #ffffff; 
-    max-width: 600px;
-}
+  margin: 0;
+  font-family: Arial, sans-serif;
+} 
+
 code {
     background: white;
 }
@@ -18,4 +14,26 @@ a {
 }
 a:hover {
     border-bottom: 0;
+}
+
+/* Lista de navegação */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+nav a {
+   color: #444444;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Efeito hover */
+nav a:hover {
+  color: #ebe705f7;
 }
