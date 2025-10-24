@@ -10,3 +10,5 @@ Responsáveis por tipo de arquivo:
 HTML: Heitor e João
 CSS: Rogério
 JAVASCRIPT: Arthur
+
+Observação: Os responsáveis irão modificar PREDOMINANTEMENTE cada área do projeto. No entanto, podem haver modificações pontuais em todos os tipos de documentos.
